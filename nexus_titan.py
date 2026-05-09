@@ -1760,7 +1760,6 @@ def wipe():
     log_action(u["username"], "wipe_account", "account deleted")
     session.clear()
     return redirect(url_for("signup"))
-
-if __name__ == "__main__":
-    logger.info("Nexus Titan Pro booting...")
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    #if __name__ == "__main__":
+   # logger.info("Nexus Titan Pro booting...")
+   # app.run(host="0.0.0.0", port=5000, debug=True)
