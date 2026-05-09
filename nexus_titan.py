@@ -1766,8 +1766,8 @@ def wipe():
 #with app.app_context():
   #  db.create_all()
 
-if __name__ == "__main__":
-    app.run()
+#if __name__ == "__main__":
+   # app.run()
 # Database ko start karne ke liye (Ye zaroori hai)
 init_db()
 
