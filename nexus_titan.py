@@ -1762,9 +1762,16 @@ def wipe():
     return redirect(url_for("signup"))
     #if __name__ == "__main__":
    # logger.info("Nexus Titan Pro booting...")
-   # app.run(host="0.0.0.0", port=5000, debug=True)
-with app.app_context():
-    db.create_all()
+   # app.run(host="0.0.0.0", port=5000, debug=True:
+#with app.app_context():
+  #  db.create_all()
 
 if __name__ == "__main__":
     app.run()
+# Database ko start karne ke liye (Ye zaroori hai)
+init_db()
+
+if __name__ == "__main__":
+    # Local Pydroid/Mobile par chalane ke liye
+    app.run(host="0.0.0.0", port=10000)
+
