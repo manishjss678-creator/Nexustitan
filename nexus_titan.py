@@ -1763,7 +1763,7 @@ def wipe():
     #if __name__ == "__main__":
    # logger.info("Nexus Titan Pro booting...")
    # app.run(host="0.0.0.0", port=5000, debug=True)
-with nexus_titan.app_context():
+with app.app_context():
     db.create_all()
 
 if __name__ == "__main__":
